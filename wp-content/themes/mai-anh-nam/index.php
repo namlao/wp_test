@@ -50,7 +50,52 @@ get_header();
             </div>
         </section>
         <section id="section-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="left-section-3">
+                            <h2>Fully Responsive Design</h2>
+                            <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                        </div>
+                    </div>
+                    <div class="col-6 right-col left-col">
+                        <div class="right-section-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="section-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 left-col right-col">
+                        <div class="left-section-4">
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="right-section-4">
+                            <h2>Updated For Bootstrap 5</h2>
+                            <p>Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="left-section-5">
+                            <h2>Easy to Use & Customize</h2>
+                            <p>Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+                        </div>
+                    </div>
+                    <div class="col-6 right-col left-col">
+                        <div class="right-section-5"></div>
+                    </div>
+                </div>
+            </div>
         </section>
 	</main><!-- #main -->
 

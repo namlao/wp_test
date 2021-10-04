@@ -168,6 +168,7 @@ input#gform_submit_button_3{
 #section-2{
     padding-top: 103px;
     padding-bottom: 111px;
+    background: #F8F9FA;
 }
 #section-2 h3{
     font-size: 28px;
@@ -176,4 +177,67 @@ input#gform_submit_button_3{
 #section-2 p{
     font-size: 20px;
     font-weight: 300;
+
+}
+
+#section-3{
+
+}
+#section-3 .left-section-3,
+#section-5 .left-section-5
+{
+    padding: 143px 97px;
+}
+#section-3 h2,
+#section-5 h2{
+    line-height: 1.2;
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 700;
+}
+#section-3 p,
+#section-5 p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+#section-3 .right-section-3{
+    background: url("../images/bg-showcase-1.jpg");
+    min-height: 30rem;
+    background-size: cover;
+}
+.right-col {
+    padding-right: 0;
+}
+
+#section-3{
+
+}
+#section-4 .right-section-4{
+    padding: 143px 97px;
+}
+#section-4 h2{
+    line-height: 1.2;
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 700;
+}
+#section-4 p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+#section-4 .left-section-4{
+    background: url("../images/bg-showcase-2.jpg");
+    min-height: 30rem;
+    background-size: cover;
+}
+.left-col{
+    padding-left: 0;
+}
+
+#section-5 .right-section-5{
+    background: url("../images/bg-showcase-3.jpg");
+    min-height: 30rem;
+    background-size: cover;
 }
