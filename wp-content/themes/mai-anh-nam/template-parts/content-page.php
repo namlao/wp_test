@@ -10,45 +10,39 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
 
-	<?php mai_anh_nam_post_thumbnail(); ?>
+    <!--	--><?php //mai_anh_nam_post_thumbnail(); ?>
 
-	<div class="entry-content">
-		<?php
-		the_content();
+    <div class="entry-content">
+        <div class="container">
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mai-anh-nam' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+            <?php the_content();
+            $data = [
+                'name' => get_field('name'),
+                'address' => get_field('address'),
+                'phone' => get_field('phone'),
+                'sothich' => get_field('sở_thich')
+            ];
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'mai-anh-nam' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					wp_kses_post( get_the_title() )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+            if (get_field('name')):
+                ?>
+
+                <p>Họ và tên: <?php echo $data['name'] ?></p>
+                <p>Địa chỉ: <?php echo $data['address'] ?></p>
+                <p>Phone: <?php echo $data['phone'] ?></p>
+                <p>Sở thích: <?php echo $data['sothich'] ?></p>
+            <?php endif; ?>
+        </div>
+        <?php
+
+
+        wp_link_pages(
+            array(
+                'before' => '<div class="page-links">' . esc_html__('Pages:', 'mai-anh-nam'),
+                'after' => '</div>',
+            )
+        );
+        ?>
+    </div><!-- .entry-content -->
+
 </article><!-- #post-<?php the_ID(); ?> -->

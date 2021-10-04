@@ -140,8 +140,19 @@ add_action( 'widgets_init', 'mai_anh_nam_widgets_init' );
  * Enqueue scripts and styles.
  */
 function mai_anh_nam_scripts() {
-	wp_enqueue_style( 'mai-anh-nam-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'mai-anh-nam-custom-style', get_stylesheet_directory_uri().'/my-custom/style.css', array() );
+//    echo get_template_directory_uri().'/my-custom/style.css';
+
+    //boostarp
+    wp_enqueue_style( 'bootstrap-style', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(),'1.0' );
+    wp_enqueue_script( 'jquery-scripts', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'popper-scripts', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'bootstrap-scripts', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array(), _S_VERSION, true );
+
+
+    wp_enqueue_style( 'mai-anh-nam-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'mai-anh-nam-custom-style', get_stylesheet_directory_uri().'/my-custom/css/style.css', array(),'1.0' );
+	wp_enqueue_style( 'frontawesome-style', 'https://use.fontawesome.com/releases/v5.15.4/css/all.css', array(),'1.0' );
+	wp_enqueue_style( 'bs-icon', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css', array(),'1.0' );
 
 	wp_enqueue_script( 'mai-anh-nam-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
@@ -174,7 +185,11 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
-
+//add_filter( 'gform_field_validation', function ( $result, $value, $form, $field ) {
+//    if ( ! $result['is_valid'] && $field->get_input_type() === 'email' && GFCommon::is_valid_email_list( $value ) ) {
+//        $result['is_valid'] = true;
+//        $result['message']  = '';
+//    }
+//
+//    return $result;
+//}, 10, 4 );
