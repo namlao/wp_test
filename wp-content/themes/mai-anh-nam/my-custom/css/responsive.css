@@ -1,0 +1,39 @@
+
+@media screen and (min-width: 320px){
+    #testimonial .testimonial-wrapper{
+        margin: 0 auto;
+    }
+    ul.social{
+        justify-content: center;
+    }
+    .order-1{
+        order:1
+    }
+    .order-2{
+        order:2
+    }
+    button.menu-toggle.navbar-toggler{
+        margin: 0 auto;
+    }
+    #banner .gform_footer.top_label{
+        width: auto;
+    }
+    ul.left-footer{
+        text-align: center;
+    }
+    .site-footer p{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 992px){
+    .order-1,.order-2{
+        order:unset;
+    }
+    ul.left-footer{
+        text-align: unset;
+    }
+    .site-footer p{
+        text-align: unset;
+    }
+
+}

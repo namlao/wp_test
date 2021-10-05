@@ -4,6 +4,7 @@ a,a:focus,a:hover{
 li{
     list-style: none;
 }
+
 /*STYLE HEADER*/
 header{
     background: #F8F9FA;
@@ -112,7 +113,7 @@ ul.social > li > a >i{
 #banner{
     background: #28384F url("../images/bg-masthead.jpg") no-repeat center center;
     background-size: cover;
-    padding: 192px 0;
+    padding: 12rem 0;
 }
 .text-align-center{
     text-align: center;
@@ -186,7 +187,7 @@ input#gform_submit_button_3{
 #section-3 .left-section-3,
 #section-5 .left-section-5
 {
-    padding: 143px 97px;
+    padding: 3rem;
 }
 #section-3 h2,
 #section-5 h2{
@@ -214,7 +215,7 @@ input#gform_submit_button_3{
 
 }
 #section-4 .right-section-4{
-    padding: 143px 97px;
+    padding: 3rem;
 }
 #section-4 h2{
     line-height: 1.2;

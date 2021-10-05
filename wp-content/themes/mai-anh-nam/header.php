@@ -28,16 +28,19 @@
     <header id="masthead" class="site-header">
         <div class="container">
             <div class="row">
-                <div class="col-5">
+                <div class="col-7 col-lg-5">
                     <div class="logo">
                         <h1><a href="<?php echo home_url()?>">Start Boostrap</a></h1>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-lg-5 order-2">
 
-                    <nav id="site-navigation" class="main-navigation">
-                        <button class="menu-toggle" aria-controls="primary-menu"
-                                aria-expanded="false"><?php esc_html_e('Primary Menu', 'mai-anh-nam'); ?></button>
+                    <nav id="site-navigation" class="main-navigation navbar-expand-lg navbar-light">
+                        <button class="menu-toggle navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-menu" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button
+<!--                        <button class="" aria-controls="primary-menu"-->
+<!--                                aria-expanded="false">--><?php //esc_html_e('Primary Menu', 'mai-anh-nam'); ?><!--</button>-->
                         <?php
                         wp_nav_menu(
                             array(
@@ -51,7 +54,7 @@
                     </nav><!-- #site-navigation -->
 
                 </div>
-                <div class="col-2 text-align-end">
+                <div class="col-5 col-lg-2 text-align-end order-1">
                     <div class="sign-up">
                         <a href="" class="btn btn-primary btn-custom">Sign up</a>
                     </div>

@@ -14,7 +14,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <ul class="left-footer">
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
@@ -23,7 +23,7 @@
                     </ul>
                     <p class="small text-muted">© Your Website 2021. All Rights Reserved.</p>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <ul class="social">
                         <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>

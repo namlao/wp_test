@@ -19,7 +19,7 @@ get_header();
         <section id="banner">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-6 text-align-center">
+                    <div class="col-lg-6 text-align-center">
                         <div class="content-banner">
                             <h1>Generate more leads with a professional landing page!</h1>
                             <?php echo do_shortcode('[gravityform id="3" title="true" description="true"]') ?>
@@ -31,17 +31,17 @@ get_header();
         <section id="section-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 text-align-center">
+                    <div class="col-12 col-lg-4 text-align-center">
                         <i class="bi bi-window text-primary ico-custom"></i>
                         <h3>Fully Responsive</h3>
                         <p>This theme will look great on any device, no matter the size!</p>
                     </div>
-                    <div class="col-4 text-align-center">
+                    <div class="col-12 col-lg-4 text-align-center">
                         <i class="bi bi-layers text-primary ico-custom"></i>
                         <h3>Bootstrap 5 Ready</h3>
                         <p>Featuring the latest build of the new Bootstrap 5 framework!</p>
                     </div>
-                    <div class="col-4 text-align-center">
+                    <div class="col-12 col-lg-4 text-align-center">
                         <i class="bi bi-terminal text-primary ico-custom"></i>
                         <h3>Easy to Use</h3>
                         <p>Ready to use with your own content, or customize the source files!</p>
@@ -52,7 +52,7 @@ get_header();
         <section id="section-3">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6 order-2">
                         <div class="left-section-3">
                             <h2>Fully Responsive Design</h2>
                             <p>When you use a theme created by Start Bootstrap, you know that the theme will look great
@@ -60,7 +60,7 @@ get_header();
                                 responsively!</p>
                         </div>
                     </div>
-                    <div class="col-6 right-col left-col">
+                    <div class="col-12 col-lg-6 right-col left-col order-1">
                         <div class="right-section-3"></div>
                     </div>
                 </div>
@@ -70,12 +70,12 @@ get_header();
         <section id="section-4">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6 left-col right-col">
+                    <div class="col-12 col-lg-6 left-col right-col">
                         <div class="left-section-4">
 
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="right-section-4">
                             <h2>Updated For Bootstrap 5</h2>
                             <p>Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in
@@ -89,7 +89,7 @@ get_header();
         <section id="section-5">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6 order-2">
                         <div class="left-section-5">
                             <h2>Easy to Use & Customize</h2>
                             <p>Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper
@@ -97,7 +97,7 @@ get_header();
                                 landing page will be ready to go!</p>
                         </div>
                     </div>
-                    <div class="col-6 right-col left-col">
+                    <div class="col-12 col-lg-6 right-col left-col order-1">
                         <div class="right-section-5"></div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@ get_header();
                     if (have_rows('team')):
                         while (have_rows('team')):the_row();
                             ?>
-                            <div class="col-4">
+                            <div class="col-12 col-lg-4">
                                 <div class="testimonial-wrapper">
                                     <img src="<?php echo get_sub_field('avatar')?>" alt="">
                                     <h5><?php echo get_sub_field('name')?></h5>
