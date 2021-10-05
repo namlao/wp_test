@@ -151,6 +151,7 @@ function mai_anh_nam_scripts() {
 
     wp_enqueue_style( 'mai-anh-nam-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'mai-anh-nam-custom-style', get_stylesheet_directory_uri().'/my-custom/css/style.css', array(),'1.0' );
+	wp_enqueue_style( 'mai-anh-nam-responsive-style', get_stylesheet_directory_uri().'/my-custom/css/responsive.css', array(),'1.0' );
 	wp_enqueue_style( 'frontawesome-style', 'https://use.fontawesome.com/releases/v5.15.4/css/all.css', array(),'1.0' );
 	wp_enqueue_style( 'bs-icon', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css', array(),'1.0' );
 

@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template name: Trang chủ
  * The main template file
  *
  * This is the most generic template file in a WordPress theme
@@ -14,15 +15,14 @@
 
 get_header();
 ?>
-
-	<main id="primary" class="site-main">
+    <main id="primary" class="site-main">
         <section id="banner">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-6 text-align-center">
                         <div class="content-banner">
                             <h1>Generate more leads with a professional landing page!</h1>
-                            <?php echo do_shortcode('[gravityform id="3" title="true" description="true"]')?>
+                            <?php echo do_shortcode('[gravityform id="3" title="true" description="true"]') ?>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,9 @@ get_header();
                     <div class="col-6">
                         <div class="left-section-3">
                             <h2>Fully Responsive Design</h2>
-                            <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                            <p>When you use a theme created by Start Bootstrap, you know that the theme will look great
+                                on any device, whether it's a phone, tablet, or desktop the page will behave
+                                responsively!</p>
                         </div>
                     </div>
                     <div class="col-6 right-col left-col">
@@ -76,7 +78,9 @@ get_header();
                     <div class="col-6">
                         <div class="right-section-4">
                             <h2>Updated For Bootstrap 5</h2>
-                            <p>Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+                            <p>Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in
+                                mobile responsive web development! All of the themes on Start Bootstrap are now using
+                                Bootstrap 5!</p>
                         </div>
                     </div>
                 </div>
@@ -88,7 +92,9 @@ get_header();
                     <div class="col-6">
                         <div class="left-section-5">
                             <h2>Easy to Use & Customize</h2>
-                            <p>Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+                            <p>Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper
+                                customization options. Out of the box, just add your content and images, and your new
+                                landing page will be ready to go!</p>
                         </div>
                     </div>
                     <div class="col-6 right-col left-col">
@@ -97,8 +103,40 @@ get_header();
                 </div>
             </div>
         </section>
-	</main><!-- #main -->
+        <section id="testimonial">
+            <div class="container">
+                <h2 class="mb-5 text-align-center">What people are saying...</h2>
+                <div class="row">
+                    <?php
+                    if (have_rows('team')):
+                        while (have_rows('team')):the_row();
+                            ?>
+                            <div class="col-4">
+                                <div class="testimonial-wrapper">
+                                    <img src="<?php echo get_sub_field('avatar')?>" alt="">
+                                    <h5><?php echo get_sub_field('name')?></h5>
+                                    <p class="mb-0"><?php echo get_sub_field('content')?></p>
+                                </div>
+                            </div>
+                        <?php endwhile; endif; ?>
+                </div>
+            </div>
 
+        </section>
+        <section id="call-to-action" class="text-align-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="content-form">
+                            <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+                            <?php echo do_shortcode('[gravityform id="3" title="true" description="true"]') ?>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main><!-- #main -->
 <?php
 //get_sidebar();
 get_footer();

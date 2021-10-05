@@ -241,3 +241,64 @@ input#gform_submit_button_3{
     min-height: 30rem;
     background-size: cover;
 }
+#testimonial{
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-color: #F8F9FA;
+}
+#testimonial .testimonial-wrapper{
+    text-align: center;
+    max-width: 288px;
+
+}
+#testimonial .testimonial-wrapper > img{
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 192px;
+    margin-bottom: 16px;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+#testimonial .testimonial-wrapper > h5{
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+#testimonial .testimonial-wrapper > p{
+    font-weight: 400;
+}
+
+#call-to-action{
+    background: #0a58ca url("../images/bg-masthead.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 112px 0;
+}
+#call-to-action h2.gform_title{
+    display: none;
+}
+#call-to-action h2{
+    color: white;
+}
+
+#call-to-action .content-form form{
+    display: flex;
+}
+#call-to-action .gform_body.gform-body{
+    width: 80%;
+    margin-right: 24px;
+}
+#call-to-action .gform_footer.top_label{
+    width: 20%;
+}
+#call-to-action .content-form form input#input_3_1,
+input#gform_submit_button_3
+{
+    padding: 16px 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 5px;
+}
+input#gform_submit_button_3{
+    background: #0d6efd;
+    border: #0d6efd;
+    color: white;
+}
