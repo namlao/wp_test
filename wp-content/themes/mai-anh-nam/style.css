@@ -82,9 +82,9 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-body {
-	margin: 0;
-}
+/*body {*/
+/*	margin: 0;*/
+/*}*/
 
 /**
  * Render the `main` element consistently in IE.
@@ -752,10 +752,10 @@ textarea {
 	display: block;
 }
 
-.post,
-.page {
-	margin: 0 0 1.5em;
-}
+/*.post,*/
+/*.page {*/
+/*	margin: 0 0 1.5em;*/
+/*}*/
 
 .updated:not(.published) {
 	display: none;

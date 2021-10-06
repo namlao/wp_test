@@ -147,6 +147,7 @@ function mai_anh_nam_scripts() {
     wp_enqueue_script( 'jquery-scripts', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'popper-scripts', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'bootstrap-scripts', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array(), _S_VERSION, true );
+//    wp_enqueue_script( 'my-scripts', get_stylesheet_directory_uri().'/my-custom/js/scripts.css', array(), _S_VERSION, true );
 
 
     wp_enqueue_style( 'mai-anh-nam-style', get_stylesheet_uri(), array(), _S_VERSION );
@@ -186,11 +187,7 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-//add_filter( 'gform_field_validation', function ( $result, $value, $form, $field ) {
-//    if ( ! $result['is_valid'] && $field->get_input_type() === 'email' && GFCommon::is_valid_email_list( $value ) ) {
-//        $result['is_valid'] = true;
-//        $result['message']  = '';
-//    }
-//
-//    return $result;
-//}, 10, 4 );
+
+add_filter( 'gform_validation_message', function ($message,$form){
+    return "<div class='validation_error'>Failed Validation - " . $form['title'] . '</div>';
+}, 10, 2 );

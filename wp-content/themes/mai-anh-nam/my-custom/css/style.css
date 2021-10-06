@@ -1,9 +1,14 @@
+*{
+    outline: none;
+}
 a,a:focus,a:hover{
     text-decoration: none;
 }
 li{
     list-style: none;
 }
+
+
 
 /*STYLE HEADER*/
 header{
@@ -187,7 +192,7 @@ input#gform_submit_button_3{
 #section-3 .left-section-3,
 #section-5 .left-section-5
 {
-    padding: 3rem;
+    padding: 7rem;
 }
 #section-3 h2,
 #section-5 h2{
@@ -215,7 +220,7 @@ input#gform_submit_button_3{
 
 }
 #section-4 .right-section-4{
-    padding: 3rem;
+    padding: 7rem;
 }
 #section-4 h2{
     line-height: 1.2;
@@ -302,4 +307,7 @@ input#gform_submit_button_3{
     background: #0d6efd;
     border: #0d6efd;
     color: white;
+}
+.gform_validation_errors{
+    display: none;
 }

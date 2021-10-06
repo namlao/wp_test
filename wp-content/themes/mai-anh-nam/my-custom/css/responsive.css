@@ -24,6 +24,17 @@
     .site-footer p{
         text-align: center;
     }
+    nav ul>li.menu-item{
+        display: block;
+    }
+    #section-3 .left-section-3,
+    #section-5 .left-section-5
+    {
+        padding: 3rem;
+    }
+    #section-4 .right-section-4{
+        padding: 3rem;
+    }
 }
 @media screen and (min-width: 992px){
     .order-1,.order-2{
@@ -35,5 +46,18 @@
     .site-footer p{
         text-align: unset;
     }
-
+    nav ul>li.menu-item{
+        display: inline-block;
+    }
+    #section-3 .left-section-3,
+    #section-5 .left-section-5
+    {
+        padding: 7rem;
+    }
+    #section-4 .right-section-4{
+        padding: 7rem;
+    }
+    ul.social{
+        justify-content: end;
+    }
 }
